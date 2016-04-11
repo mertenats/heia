@@ -1,0 +1,11 @@
+Internet of Things Laboratories
+Telecommunications - 2014-5
+
+Current version		-> IoT/
+TP01			-> tp01/IoT/			13/03/2015
+TP02			-> tp02/IoT/			25/03/2015 
+			-> tp02/ArduinoDataCollector/	12/03/2015	(Java code to collect the data from the Arduino)
+TP3			-> tp03/IoT/			03/04/2015
+TP4 part I		-> tp04_I/IoT			04/05/2015	
+TP4 part II		-> tp04_II/IoT			08/05/2015	
+TP05			-> tp05/IoT			25/05/2015

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Weather station | Mettraux and Mertenat</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <!-- Start top menu -->
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Weather-station.ch</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li><a href="index.html">Home <span class="sr-only">(current)</span></a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Station(s) <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Station A</a></li>
+              <li><a href="#">Station B</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">History <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#title_history">Temperature</a></li>
+              <li><a href="#title_history">Humidity</a></li>
+              <li><a href="#title_history">Pressure</a></li>
+            </ul>
+          </li>
+
+          <li><a href="#title_settings">Settings <span class="sr-only">(current)</span></a></li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div>
+  </nav>
+  <!-- End top menu -->
+
+  <!-- Start content section -->
+  <div class="container">
+    <div class="row">
+      <!-- This column is hidden when the page width is equal to xs -->
+      <div class="col-xs-12 col-sm-3 hidden-xs">
+        <img class="img-responsive" src="img/Cloud.png" alt="Logo"/>
+
+        <!-- Start lateral navigation -->
+        <div class="panel-group">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"><a data-toggle="collapse" href="#list_stations">Station(s)</a></h4>
+            </div>
+
+            <div id="list_stations" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#title_station_1">Station A</a></li>
+                <li class="list-group-item"><a href="#title_station_2">Station B</a></li>
+              </ul>
+              <!--<div class="panel-footer">Footer</div>-->
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"><a href="#title_preview">Preview</a></h4>
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"><a data-toggle="collapse" href="#history">History</a></h4>
+            </div>
+            <div id="history" class="panel-collapse collapse">
+              <ul class="list-group">
+                <li class="list-group-item"><a href="#">Temperature</a></li>
+                <li class="list-group-item"><a href="#">Humidity</a></li>
+                <li class="list-group-item"><a href="#">Pressure</a></li>
+              </ul>
+              <!--<div class="panel-footer">Footer</div>-->
+            </div>
+          </div>
+
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title"><a href="#title_settings">Settings</a></h4>
+            </div>
+          </div>
+
+        </div>
+        <!-- End lateral navigation -->
+
+        <img class="img-responsive" src="img/Logo_heia.jpg" alt="Logo" />
+      </div>
+
+      <div class="col-xs-12 col-sm-9">
+        <div class="row text-center">
+          <h1>Detailled preview</h1>
+        </div>
+        <!-- Start preview station 1 -->
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <h2 id="title_preview">Station A</h2>
+          </div>
+          <div class="col-xs-6 col-sm-6 text-right">
+            <h2><span class="label label-success">on</span></h2>
+          </div>
+        </div>
+        <hr>
+
+        <div class="row">
+          <div class="col-xs-6 col-sm-4">
+            <div class="circle blue">
+              <div class="circle-inner">
+                <div class="circle-text">
+                  22°C
+                </div>
+              </div>
+            </div>
+            <p class="circle-title">Temperature</p>
+          </div>
+
+          <div class="col-xs-6 col-sm-4">
+            <div class="circle orange">
+              <div class="circle-inner">
+                <div class="circle-text">
+                  75%
+                </div>
+              </div>
+            </div>
+            <p class="circle-title">Humidity</p>
+          </div>
+
+          <div class="col-xs-6 col-sm-4">
+            <div class="circle red">
+              <div class="circle-inner">
+                <div class="circle-text">
+                  1234hPa
+                </div>
+              </div>
+            </div>
+            <p class="circle-title">Pressure</p>
+          </div>
+        </div>
+        <!-- End preview section -->
+
+        <!-- Start history section -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <h2 id="title_history">History</h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <p>This functionality isn't implemented yet.</p>
+          </div>
+        </div>
+        <!-- End history section -->
+
+        <!-- Start settings section -->
+        <div class="row">
+          <div class="col-xs-12 col-sm-12">
+            <h2 id="title_settings">Settings</h2>
+          </div>
+        </div>
+        <hr>
+        <div class="row">
+          <div class="col-xs-6 col-sm-6">
+            <p>Enable / disable the measurements</p>
+          </div>
+          <div class="col-xs-6 col-sm-6 text-right">
+            <div class="btn-group btn-toggle">
+              <button class="btn btn-xs btn-default">ON</button>
+              <button class="btn btn-xs btn-success active">OFF</button>
+            </div>
+          </div>
+        </div>
+        <!-- End settings section -->
+      </div>
+    </div>
+  </div>
+  <!-- End of content section -->
+
+
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.js"></script>
+</body>
+</html>

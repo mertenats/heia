@@ -1,0 +1,95 @@
+/* insert some space between the top bar and the page content */
+body {
+  padding-top: 80px;
+  padding-bottom: 30px;
+}
+
+/*
+  Colors for the circles background (Preview station(s))
+*/
+.blue {
+  background-color: #0099FF;
+  color: white;
+}
+
+.green {
+  background-color: #00cc00;
+  color: white;
+}
+
+.orange {
+  background-color: #FFCC00;
+  color: white;
+}
+
+.red {
+  background-color: #FF3333;
+  color: white;
+}
+
+/*
+  Circle
+  Source : http://littledice.me/2014/04/16/responsive-circles-with-css/
+*/
+.circle {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50%;
+  width: 100%;
+  position: relative;
+}
+
+.circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+}
+
+.circle:before {
+  content: "";
+  display: block;
+  padding-top: 100%;
+}
+
+.circle-text {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 1em;
+  line-height: 1em;
+  font-size: 4em;
+}
+
+.circle-title {
+  font-size: 2.5em;
+  text-align: center;
+  padding-top: 0.6em;
+}
+
+/* Reduce title font size for screens with width < 1280 */
+@media screen and (max-width: 1280px) {
+  .circle-text {
+    font-size: 3.1em;
+  }
+
+  .circle-title {
+    font-size: 2em;
+  }
+}
+
+/* Reduce title font size for screens with width < 1024 */
+@media screen and (max-width: 1024px) {
+  .circle-text {
+    font-size: 2.8em;
+  }
+
+  .circle-title {
+    font-size: 1.5em;
+  }
+}

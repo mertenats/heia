@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Navigation</string>
+    <string name="lauch_peer">Launch another PeerActivity</string>
+    <string name="help">Press on the button to launch a new PeerActivity. The counter below indicates the number of current PeerActivity instances.</string>
+</resources>

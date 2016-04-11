@@ -1,0 +1,341 @@
+Archive member included because of file (symbol)
+
+/home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+                              (_start)
+/home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+                              .obj/apf27/main.o (imx27_serial_puts)
+/home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+                              /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o) (imx27_clock_get_perclk1)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+                              /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o) (__aeabi_uidiv)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+                              /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+                              /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o) (__aeabi_uldivmod)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+                              /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o) (__gnu_uldivmod_helper)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+                              /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o) (__divdi3)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+                              /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o) (__udivdi3)
+/usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+                              /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o) (__clzsi2)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+RAM              0x00000000a0000000 0x0000000004000000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD .obj/apf27/buttons.o
+LOAD .obj/apf27/display_7seg.o
+LOAD .obj/apf27/display.o
+LOAD .obj/apf27/fpga.o
+LOAD .obj/apf27/main.o
+START GROUP
+LOAD /home/samuel/workspace/se12/apf27/source/libapf27.a
+LOAD /usr/lib/arm-none-eabi/lib/libc.a
+LOAD /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a
+LOAD /usr/lib/arm-none-eabi/lib/libm.a
+END GROUP
+                0x0000000000080000                C_STACK_SIZE = 0x80000
+
+.text           0x00000000a0000000     0x1948
+                0x00000000a0000100                . = (. + 0x100)
+ *fill*         0x00000000a0000000      0x100 
+ *(.text_startup)
+ .text_startup  0x00000000a0000100       0x58 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+                0x00000000a0000100                _start
+                0x00000000a0000200                . = ALIGN (0x100)
+ *fill*         0x00000000a0000158       0xa8 
+ *(.text*)
+ .text          0x00000000a0000200       0x78 .obj/apf27/buttons.o
+                0x00000000a0000200                buttons_init
+                0x00000000a000021c                buttons_test
+                0x00000000a0000240                buttons_get_state
+ .text          0x00000000a0000278       0x5c .obj/apf27/display_7seg.o
+                0x00000000a0000278                display_fpga_init
+                0x00000000a0000294                display_fpga_7seg
+                0x00000000a00002b0                display_fpga_test
+ .text          0x00000000a00002d4       0x2c .obj/apf27/display.o
+                0x00000000a00002d4                display_val
+ .text          0x00000000a0000300        0x0 .obj/apf27/fpga.o
+ .text          0x00000000a0000300       0xb4 .obj/apf27/main.o
+                0x00000000a0000300                main
+                0x00000000a0000320                main_loop
+                0x00000000a0000384                delayDisplayTestMode
+                0x00000000a0000398                delayButtonsTestMode
+ .text          0x00000000a00003b4        0x0 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .text          0x00000000a00003b4      0x454 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+                0x00000000a0000420                imx27_serial_init
+                0x00000000a00005d8                imx27_serial_putc
+                0x00000000a0000654                imx27_serial_tstc
+                0x00000000a00006a0                imx27_serial_getc
+                0x00000000a0000708                imx27_serial_puts
+                0x00000000a000074c                imx27_serial_set_baudrate
+ .text          0x00000000a0000808      0x5e0 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+                0x00000000a0000a20                imx27_clock_get_ahbclk
+                0x00000000a0000a58                imx27_clock_get_ipgclk
+                0x00000000a0000a74                imx27_clock_get_perclk1
+                0x00000000a0000aa8                imx27_clock_get_perclk2
+                0x00000000a0000ae0                imx27_clock_get_perclk3
+                0x00000000a0000b18                imx27_clock_get_perclk4
+                0x00000000a0000b50                imx27_clock_enable_line
+                0x00000000a0000b9c                imx27_clock_disable_line
+                0x00000000a0000bec                imx27_clock_config_cpsi
+                0x00000000a0000c58                imx27_clock_config_lcdc
+                0x00000000a0000ca8                imx27_clock_enable_lcdc
+                0x00000000a0000cf8                imx27_clock_disable_lcdc
+                0x00000000a0000d48                imx27_clock_enable_fec
+                0x00000000a0000d98                imx27_clock_disable_fec
+ .text          0x00000000a0000de8      0x114 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+                0x00000000a0000de8                __udivsi3
+                0x00000000a0000de8                __aeabi_uidiv
+                0x00000000a0000edc                __aeabi_uidivmod
+ .text          0x00000000a0000efc        0x4 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+                0x00000000a0000efc                __aeabi_ldiv0
+                0x00000000a0000efc                __aeabi_idiv0
+ .text          0x00000000a0000f00       0x3c /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+                0x00000000a0000f00                __aeabi_uldivmod
+ .text          0x00000000a0000f3c       0x84 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+                0x00000000a0000f3c                __gnu_ldivmod_helper
+                0x00000000a0000f80                __gnu_uldivmod_helper
+ .text          0x00000000a0000fc0      0x4d0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+                0x00000000a0000fc0                __divdi3
+ .text          0x00000000a0001490      0x470 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+                0x00000000a0001490                __udivdi3
+ .text          0x00000000a0001900       0x48 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+                0x00000000a0001900                __clzsi2
+
+.glue_7         0x00000000a0001948        0x0
+ .glue_7        0x0000000000000000        0x0 linker stubs
+
+.glue_7t        0x00000000a0001948        0x0
+ .glue_7t       0x0000000000000000        0x0 linker stubs
+
+.vfp11_veneer   0x00000000a0001948        0x0
+ .vfp11_veneer  0x0000000000000000        0x0 linker stubs
+
+.v4_bx          0x00000000a0001948        0x0
+ .v4_bx         0x0000000000000000        0x0 linker stubs
+
+.iplt           0x00000000a0001948        0x0
+ .iplt          0x0000000000000000        0x0 .obj/apf27/buttons.o
+
+.rodata         0x00000000a0001948       0xaf
+ *(.rodata*)
+ .rodata        0x00000000a0001948       0x40 .obj/apf27/display_7seg.o
+ .rodata        0x00000000a0001988       0x6f .obj/apf27/main.o
+
+.ARM.extab      0x00000000a00019f7        0x0
+ .ARM.extab     0x00000000a00019f7        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .ARM.extab     0x00000000a00019f7        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+
+.data           0x00000000a00019f8        0x8
+ *(.data*)
+ .data          0x00000000a00019f8        0x0 .obj/apf27/buttons.o
+ .data          0x00000000a00019f8        0x0 .obj/apf27/display_7seg.o
+ .data          0x00000000a00019f8        0x0 .obj/apf27/display.o
+ .data          0x00000000a00019f8        0x0 .obj/apf27/fpga.o
+ .data          0x00000000a00019f8        0x0 .obj/apf27/main.o
+ .data          0x00000000a00019f8        0x0 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .data          0x00000000a00019f8        0x4 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .data          0x00000000a00019fc        0x4 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .data          0x00000000a0001a00        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+                0x00000000a0001a00                __exidx_start = .
+
+.igot.plt       0x00000000a0001a00        0x0
+ .igot.plt      0x0000000000000000        0x0 .obj/apf27/buttons.o
+
+.ARM.exidx      0x00000000a0001a00        0x8
+ *(.ARM.exidx* .gnu.linkonce.armexidx.*)
+ .ARM.exidx     0x00000000a0001a00        0x8 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .ARM.exidx     0x00000000a0001a08        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+                                          0x8 (size before relaxing)
+                0x00000000a0001a08                __exidx_end = .
+
+.rel.dyn        0x00000000a0001a08        0x0
+ .rel.iplt      0x0000000000000000        0x0 .obj/apf27/buttons.o
+
+.bss            0x00000000a0001a08       0xf8
+                0x00000000a0001a08                . = ALIGN (0x8)
+                0x00000000a0001a08                __bss_start__ = .
+ *(.bss*)
+ .bss           0x00000000a0001a08        0x0 .obj/apf27/buttons.o
+ .bss           0x00000000a0001a08        0x0 .obj/apf27/display_7seg.o
+ .bss           0x00000000a0001a08        0x0 .obj/apf27/display.o
+ .bss           0x00000000a0001a08        0x0 .obj/apf27/fpga.o
+ .bss           0x00000000a0001a08        0x0 .obj/apf27/main.o
+ .bss           0x00000000a0001a08        0x0 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .bss           0x00000000a0001a08        0x4 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .bss           0x00000000a0001a0c        0x0 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .bss           0x00000000a0001a0c        0x0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+ *(COMMON)
+                0x00000000a0001b00                . = ALIGN (0x100)
+ *fill*         0x00000000a0001a0c       0xf4 
+                0x00000000a0001b00                __bss_end__ = .
+                0x00000000a0001b00                _end = ALIGN (0x100)
+                0x00000000a3f80000                _stack_bottom = ((ORIGIN (RAM) + 0x4000000) - C_STACK_SIZE)
+                0x00000000a4000000                __c_stack_top__ = (ORIGIN (RAM) + 0x4000000)
+OUTPUT(app_a elf32-littlearm)
+
+.ARM.attributes
+                0x0000000000000000       0x2e
+ .ARM.attributes
+                0x0000000000000000       0x22 .obj/apf27/buttons.o
+ .ARM.attributes
+                0x0000000000000022       0x22 .obj/apf27/display_7seg.o
+ .ARM.attributes
+                0x0000000000000044       0x22 .obj/apf27/display.o
+ .ARM.attributes
+                0x0000000000000066       0x22 .obj/apf27/fpga.o
+ .ARM.attributes
+                0x0000000000000088       0x22 .obj/apf27/main.o
+ .ARM.attributes
+                0x00000000000000aa       0x22 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .ARM.attributes
+                0x00000000000000cc       0x32 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .ARM.attributes
+                0x00000000000000fe       0x32 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .ARM.attributes
+                0x0000000000000130       0x18 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000000000000148       0x18 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x0000000000000160       0x18 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .ARM.attributes
+                0x0000000000000178       0x30 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .ARM.attributes
+                0x00000000000001a8       0x30 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .ARM.attributes
+                0x00000000000001d8       0x30 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .ARM.attributes
+                0x0000000000000208       0x18 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+
+.comment        0x0000000000000000       0x1f
+ .comment       0x0000000000000000       0x1f /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+                                         0x20 (size before relaxing)
+ .comment       0x0000000000000000       0x20 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .comment       0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .comment       0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .comment       0x0000000000000000       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+
+.debug_line     0x0000000000000000      0x784
+ .debug_line    0x0000000000000000       0x5a .obj/apf27/buttons.o
+ .debug_line    0x000000000000005a       0x5a .obj/apf27/display_7seg.o
+ .debug_line    0x00000000000000b4       0x43 .obj/apf27/display.o
+ .debug_line    0x00000000000000f7       0x66 .obj/apf27/main.o
+ .debug_line    0x000000000000015d       0x51 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .debug_line    0x00000000000001ae      0x103 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .debug_line    0x00000000000002b1       0xf5 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .debug_line    0x00000000000003a6       0x8a /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .debug_line    0x0000000000000430       0x61 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .debug_line    0x0000000000000491       0x66 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .debug_line    0x00000000000004f7       0x67 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_line    0x000000000000055e       0xe1 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_line    0x000000000000063f       0xd7 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .debug_line    0x0000000000000716       0x6e /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+
+.debug_info     0x0000000000000000     0x1793
+ .debug_info    0x0000000000000000       0x54 .obj/apf27/buttons.o
+ .debug_info    0x0000000000000054       0x59 .obj/apf27/display_7seg.o
+ .debug_info    0x00000000000000ad       0x54 .obj/apf27/display.o
+ .debug_info    0x0000000000000101       0x51 .obj/apf27/main.o
+ .debug_info    0x0000000000000152       0x56 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .debug_info    0x00000000000001a8      0x2b4 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .debug_info    0x000000000000045c      0x44e /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .debug_info    0x00000000000008aa       0x94 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .debug_info    0x000000000000093e       0x94 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .debug_info    0x00000000000009d2       0x90 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .debug_info    0x0000000000000a62      0x164 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_info    0x0000000000000bc6      0x5bd /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_info    0x0000000000001183      0x57c /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .debug_info    0x00000000000016ff       0x94 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+
+.debug_abbrev   0x0000000000000000      0x6d3
+ .debug_abbrev  0x0000000000000000       0x14 .obj/apf27/buttons.o
+ .debug_abbrev  0x0000000000000014       0x14 .obj/apf27/display_7seg.o
+ .debug_abbrev  0x0000000000000028       0x14 .obj/apf27/display.o
+ .debug_abbrev  0x000000000000003c       0x14 .obj/apf27/main.o
+ .debug_abbrev  0x0000000000000050       0x14 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .debug_abbrev  0x0000000000000064      0x155 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .debug_abbrev  0x00000000000001b9      0x15a /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .debug_abbrev  0x0000000000000313       0x14 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .debug_abbrev  0x0000000000000327       0x14 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .debug_abbrev  0x000000000000033b       0x14 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .debug_abbrev  0x000000000000034f       0xb7 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_abbrev  0x0000000000000406      0x165 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_abbrev  0x000000000000056b      0x154 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .debug_abbrev  0x00000000000006bf       0x14 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+
+.debug_aranges  0x0000000000000000      0x1c0
+ .debug_aranges
+                0x0000000000000000       0x20 .obj/apf27/buttons.o
+ .debug_aranges
+                0x0000000000000020       0x20 .obj/apf27/display_7seg.o
+ .debug_aranges
+                0x0000000000000040       0x20 .obj/apf27/display.o
+ .debug_aranges
+                0x0000000000000060       0x20 .obj/apf27/main.o
+ .debug_aranges
+                0x0000000000000080       0x20 /home/samuel/workspace/se12/apf27/source/libapf27.a(crt0.o)
+ .debug_aranges
+                0x00000000000000a0       0x20 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .debug_aranges
+                0x00000000000000c0       0x20 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .debug_aranges
+                0x00000000000000e0       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .debug_aranges
+                0x0000000000000100       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_dvmd_tls.o)
+ .debug_aranges
+                0x0000000000000120       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_aeabi_uldivmod.o)
+ .debug_aranges
+                0x0000000000000140       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_aranges
+                0x0000000000000160       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_aranges
+                0x0000000000000180       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+ .debug_aranges
+                0x00000000000001a0       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_clzsi2.o)
+
+.debug_str      0x0000000000000000      0x90c
+ .debug_str     0x0000000000000000      0x1e8 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+                                        0x23b (size before relaxing)
+ .debug_str     0x00000000000001e8      0x48d /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+                                        0x58d (size before relaxing)
+ .debug_str     0x0000000000000675      0x157 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+                                        0x17c (size before relaxing)
+ .debug_str     0x00000000000007cc      0x140 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+                                        0x22a (size before relaxing)
+ .debug_str     0x0000000000000000      0x22b /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+
+.debug_frame    0x0000000000000000      0x3c0
+ .debug_frame   0x0000000000000000       0xd8 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_serial.o)
+ .debug_frame   0x00000000000000d8      0x200 /home/samuel/workspace/se12/apf27/source/libapf27.a(imx27_clock.o)
+ .debug_frame   0x00000000000002d8       0x20 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivsi3.o)
+ .debug_frame   0x00000000000002f8       0x58 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_frame   0x0000000000000350       0x38 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_frame   0x0000000000000388       0x38 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+
+.debug_loc      0x0000000000000000     0x1834
+ .debug_loc     0x0000000000000000       0xa0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(bpabi.o)
+ .debug_loc     0x00000000000000a0      0xb31 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_loc     0x0000000000000bd1      0xc63 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)
+
+.debug_ranges   0x0000000000000000      0x178
+ .debug_ranges  0x0000000000000000       0xa8 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_divdi3.o)
+ .debug_ranges  0x00000000000000a8       0xd0 /usr/lib/gcc/arm-none-eabi/4.8.2/libgcc.a(_udivdi3.o)

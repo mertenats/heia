@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">LaunchActivity</string>
+    <string name="launch_activity">Start Activity</string>
+
+</resources>
