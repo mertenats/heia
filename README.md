@@ -3,6 +3,6 @@
 
 - Algorithms and Data Structures (Java)
 - Embedded Systems I & II (C, ARM Assembly)
-- Internet Applications (HTML, CSS, JS, jQuery, Ajax, Java)
+- Internet Applications (HTML, CSS, JS, jQuery, Ajax, Java, CoAP)
 - Internet of Things (Arduino, BLE, C++)
-- Mobile Applications (Android, BLE)
+- Mobile Applications (Android, BLE, Java)

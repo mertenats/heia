@@ -1,0 +1,7 @@
+
+C10-16
+sudo route add -inet6 2004::29C:FDff:feA0:5696 2001:620:40b:1030:ba27:ebff:febb:bf56
+C10-22
+sudo route add -inet6 2004::227:CDff:fe41:449E 2001:620:40b:1030:ba27:ebff:fe5c:d8ae
+C10-12
+sudo route add -inet6 2004::247:C0ff:feC5:3E3D 2001:620:40b:1030:ba27:ebff:feda:d5c
