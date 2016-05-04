@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:stretchColumns="*">
+
+    <TableRow>
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal" />
+    </TableRow>
+
+    <TableRow>
+        <TextView
+            android:id="@+id/legal_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="13sp"
+            android:textStyle="italic"
+            android:layout_span="2"
+            android:layout_margin="8dip"
+            android:textColor="#cccccc" />
+    </TableRow>
+
+    <TableRow>
+        <Button
+            android:id="@+id/dismiss"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/dismiss" />
+        </TableRow>
+</TableLayout>
