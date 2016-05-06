@@ -6,3 +6,4 @@
 - Internet Applications (HTML, CSS, JS, jQuery, Ajax, Java, CoAP)
 - Internet of Things (Arduino, BLE, C++)
 - Mobile Applications (Android, BLE, Java)
+- Information Systems II (Servlet, JSP, ...)

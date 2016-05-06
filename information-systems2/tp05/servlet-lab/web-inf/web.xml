@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0"
+  xmlns="http://java.sun.com/xml/ns/javaee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+                      http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  metadata-complete="true">
+  <absolute-ordering/>
+
+  <display-name>SINF2 Servlet Lab 2015/16</display-name>
+  <description>SINF2 Servlet Lab - Group B</description>
+
+  <!-- HelloWorld -->
+  <servlet>
+    <description>Classic hello world</description>
+    <display-name>HelloWorld Servlet</display-name>
+    <servlet-name>HelloWorld</servlet-name>
+    <servlet-class>servlet.HelloWorld</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HelloWorld</servlet-name>
+    <url-pattern>/hello/world</url-pattern>
+  </servlet-mapping>
+
+  <!-- EmployeeDB -->
+  <servlet>
+    <description>EmployeeDB servlet</description>
+    <display-name>EmployeeDB Servlet</display-name>
+    <servlet-name>EmplDB</servlet-name>
+    <servlet-class>servlet.EmployeeDB</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmplDB</servlet-name>
+    <url-pattern>/empl-db/app</url-pattern>
+  </servlet-mapping>
+    
+  <!-- HTTPHeadersServlet -->
+  <servlet>
+    <description>HTTPHeadersServlet servlet</description>
+    <display-name>HTTPHeadersServlet Servlet</display-name>
+    <servlet-name>HTTPHeadersServlet</servlet-name>
+    <servlet-class>servlet.HTTPHeadersServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HTTPHeadersServlet</servlet-name>
+    <url-pattern>/servlets/HTTPHeadersServlet</url-pattern>
+  </servlet-mapping>
+
+    <!-- CookieServlet -->
+  <servlet>
+    <description>CookieServlet servlet</description>
+    <display-name>CookieServlet Servlet</display-name>
+    <servlet-name>CookieServlet</servlet-name>
+    <servlet-class>servlet.CookieServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CookieServlet</servlet-name>
+    <url-pattern>/CookieServlet</url-pattern>
+  </servlet-mapping>
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+  </welcome-file-list>
+</web-app>

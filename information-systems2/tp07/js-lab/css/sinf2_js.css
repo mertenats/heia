@@ -1,0 +1,111 @@
+/*
+ * SINF2 JavaScript Lab - CSS Styles
+ * 2016 (c) R. Scheurer (HEIA-FR)
+ */
+body {
+  margin: 10px auto;
+  max-width: 60em;
+  font-family: sans-serif;
+  color: #121;
+  background-color: #495C3F;
+}
+
+#header, #nav, #nav a, #main, #login, #footer {
+  border-radius: 0.5em;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+#header, #footer, #nav {
+  background: #c6e0b8;
+  border-color: #353;
+}
+
+#header {
+  font-size: 2em;
+}
+
+#header img {
+  width: 40px;
+  margin-right: 10px;
+  margin-top:-2px;
+  margin-left: 5px;
+  float:left;
+}
+
+#nav {
+  font-size: 1em;
+  float: left; 
+  width: 13em;
+  margin-top: 0px;
+  padding: 0;
+}
+ 
+#nav ul {
+  padding:0;
+}
+ 
+#nav li {
+  list-style: none;
+  margin: 0; 
+}
+ 
+#nav ul a {
+  display: block;
+  padding: .2em 0.4em;
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+#nav ul a[href] {
+  color: black; 
+  background-color: #94B684;
+}
+#nav ul a[href].selected {
+  background-color: #e3efdc;
+}
+#nav ul a {
+  color: gray; 
+  border: 2px solid #353;
+}
+ 
+#nav ul a[href]:not(.selected):hover,
+#nav ul a[href]:not(.selected):active  {
+  color: white;
+  border: 2px solid white;
+}  
+
+#main {
+  background-color: #f1f7ed;
+  margin-left: 14.5em;
+  padding: 10px 20px 20px 20px;
+  min-width: 16em;
+  min-height: 22.2em;
+}
+
+#main h2 {
+  border-bottom: 1px solid black;
+}
+
+.msg-ok {
+  font-weight: bold;
+  color: green;
+}
+
+.msg-error  {
+  font-weight: bold;
+  color: #e33;
+}
+
+tr.submit-line td {
+  background-color: #b8d8a7;
+}
+tr.submit-line td:last-child {
+  background-color: transparent;
+}
+
+input[readonly] {
+  background-color: #eee; 
+  border: 1px solid #ccc; 
+}

@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>SINF2 Servlet Lab</title>
+</head>
+<body>
+<h1>SINF2 Servlet Lab - Group B</h1>
+<hr>
+<p>These are the servlets you have to work on:</p>
+<ul>
+  <!------------------------------------------>
+  <!-- DO NOT MODIFY ANY OF THESE LINKS !!! -->
+  <!------------------------------------------>
+  <!-- You have to adapt your configuration -->
+  <!-- in web.xml to make them work ...     -->
+  <!------------------------------------------>
+  <li><a href="hello/world">HelloWorld</a> servlet</li>
+  <li>List <a href="servlets/HTTPHeadersServlet">HTTP Request Headers</a></li>
+  <li><a href="empl-db/app">Employee Database</a> Application</li>
+  <li>[Optional] Manage <a href="CookieServlet">Cookies</a></li>
+</ul>
+
+<!-- POST FORM -->
+<h3>Post Form</h3>
+<form action="servlets/HTTPHeadersServlet" name="myform" method="POST">
+  <table>
+    <tr>
+      <td><b>Param 1</b> :</td>
+      <td><input type="text" name="param1" size="20"  /></td>
+    </tr>
+    <tr>
+      <td><b>Param 2</b> :</td>
+      <td><input type="text" name="param2" size="20"  /></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td align="right">
+        <input type="submit" name="submit" value="Post" >
+      </td>
+    </tr>
+  </table>
+</form>
+<!-- END POST FORM -->
+<hr>
+Solution of group <font color="red">Mertenat & Roldan</font>
+<hr>
+<p>Recommended steps for your work:</p>
+<ol>
+  <li>Prepare Eclipse to directly work on subdirectory <code>WEB-INF/classes</code> and add <code>servlet-api.jar</code> to the build path of your project</li>
+  <li>Compile servlet <code>HelloWorld</code></li>
+  <li>Adjust url for servlet <code>HelloWorld</code>in <code>web.xml</code></li>
+  <li>Copy servlet <code>HelloWorld</code> to <code>HTTPRequestServlet</code> and write code to list up HTTP request header</li>
+  <li>Copy servlet configuration in <code>web.xml</code> and adapt it for servlet <code>HTTPRequestServlet</code></li>
+  <li>Compile servlet <code>EmployeeDB</code></li>
+  <li>Adjust url for servlet <code>EmployeeDB</code> in  <code>web.xml</code></li>
+  <li>Analyse code structure of servlet <code>EmployeeDB</code></li>
+  <li>Extend servlet <code>EmployeeDB</code> to handle adding/deleting of employee entries</li>
+  <li>...</li>
+</ol>
+<hr>
+SINF2-T3 - Information Systems 2 / Web Technologies (2015/16)
+</body>
+</html>

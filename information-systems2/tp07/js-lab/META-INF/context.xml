@@ -1,0 +1,12 @@
+<!--
+Attribut reloadable
+Set to true if you want Catalina to monitor classes in /WEB-INF/classes/ and /WEB-INF/lib for changes,
+and automatically reload the web application if a change is detected. This feature is very useful during
+application development, but it requires significant runtime overhead and is not recommended for use on
+deployed production applications. That's why the default setting for this attribute is false.
+You can use the Manager  web application, however, to trigger reloads of deployed applications on demand.
+
+http://tomcat.apache.org/tomcat-6.0-doc/config/context.html
+-->
+<Context path="/js-lab" reloadable="true">
+</Context>

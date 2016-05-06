@@ -1,0 +1,118 @@
+/*
+ * SINF2 JSP Lab - CSS Styles
+ * 2015 (c) R. Scheurer (HEIA-FR)
+ */
+body {
+  margin: 10px auto;
+  max-width: 60em;
+  font-family: sans-serif;
+  color: #333333;
+  background-color: rgb(204, 182, 153);
+}
+
+#header, #nav, #nav a, #main, #login, #footer {
+  border-radius: 0.5em;
+  border: 1px solid;
+  padding: 10px;
+  margin: 10px;
+}
+
+#header, #footer {
+  background: #F0E3C4;
+  border-color: #335;
+}
+
+#header {
+  font-size: 2em;
+}
+
+#header img {
+  width: 40px;
+  margin-right: 10px;
+  margin-top:-2px;
+  float:left;
+}
+
+#nav {
+  font-size: 1em;
+  float: left; 
+  width: 13em;
+  margin-top: 0px;
+  padding: 0;
+  background-color: #F0E3C4;
+  border-color: #335;
+}
+ 
+#nav ul {
+  padding:0;
+}
+ 
+#nav li {
+  list-style: none;
+  margin: 0; 
+}
+ 
+#nav ul a {
+  display: block;
+  padding: .2em 0.4em;
+  font-weight: bold;
+  text-decoration: none;
+}
+ 
+#nav ul a {
+  color: black; 
+  background-color: rgb(204, 182, 153);
+}
+ 
+#nav ul a:hover,
+#nav ul a:active  {
+  color: white;
+  border: 1px solid white;
+}  
+ 
+#login {
+  background-color: white;
+  padding: 10px 20px 20px 20px;
+  min-width: 16em;
+  min-height: 13.9em;
+}
+
+#main {
+  background-color: white;
+  margin-left: 14.5em;
+  padding: 10px 20px 20px 20px;
+  min-width: 16em;
+  min-height: 13.9em;
+}
+
+#main h2 {
+  border-bottom: 1px solid black;
+}
+
+.result-ok {
+  font-weight: bold;
+  color: green;
+}
+
+.result-error  {
+  font-weight: bold;
+  color: red;
+}
+
+#main table.table-with-header {
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+#main table.table-with-header tr:first-child {
+  background-color: lightgray;
+}
+#main table.table-with-header th,
+#main table.table-with-header td {
+  border: 1px solid black;
+  padding: 2px 3px;
+}
+
+input.invalid {
+  background-color: #fee; 
+  border: 2px inset red;
+}

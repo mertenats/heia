@@ -1,0 +1,316 @@
+[Wed Oct 28 21:01:19.118425 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:01:19.134023 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 21:01:19.134023 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 21:01:19.134023 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 21:01:19.134023 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 3596
+[Wed Oct 28 21:01:19.352394 2015] [auth_digest:notice] [pid 3596:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:01:20.101093 2015] [mpm_winnt:notice] [pid 3596:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 21:14:43.942365 2015] [auth_digest:error] [pid 3596:tid 828] [client 172.16.231.1:50126] AH01794: user admin: password mismatch: /
+[Wed Oct 28 21:14:47.218092 2015] [auth_digest:error] [pid 3596:tid 828] [client 172.16.231.1:50126] AH01794: user admin: password mismatch: /
+[Wed Oct 28 21:14:59.151098 2015] [auth_digest:error] [pid 3596:tid 828] [client 172.16.231.1:50129] AH01794: user admin: password mismatch: /
+[Wed Oct 28 21:39:10.683552 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Oct 28 21:39:10.730348 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:39:10.730348 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 21:39:10.730348 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 21:39:10.730348 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 21:39:10.730348 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2684
+[Wed Oct 28 21:39:10.933131 2015] [auth_digest:notice] [pid 2684:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:39:11.713066 2015] [mpm_winnt:notice] [pid 2684:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 21:39:12.726981 2015] [mpm_winnt:notice] [pid 3596:tid 184] AH00364: Child: All worker threads have exited.
+[Wed Oct 28 21:41:17.953173 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Oct 28 21:41:17.984370 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:41:17.984370 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 21:41:17.984370 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 21:41:17.984370 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 21:41:17.984370 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2092
+[Wed Oct 28 21:41:18.187151 2015] [auth_digest:notice] [pid 2092:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:41:18.967076 2015] [mpm_winnt:notice] [pid 2092:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 21:41:19.980978 2015] [mpm_winnt:notice] [pid 2684:tid 184] AH00364: Child: All worker threads have exited.
+[Wed Oct 28 21:41:38.059707 2015] [authz_core:error] [pid 2092:tid 820] [client 127.0.0.1:49621] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public
+[Wed Oct 28 21:43:48.310214 2015] [authz_core:error] [pid 2092:tid 820] [client 127.0.0.1:49623] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public
+[Wed Oct 28 21:43:54.612089 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Oct 28 21:43:54.627688 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:43:54.627688 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 21:43:54.627688 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 21:43:54.627688 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 21:43:54.627688 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4128
+[Wed Oct 28 21:43:54.830471 2015] [auth_digest:notice] [pid 4128:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 21:43:55.626005 2015] [mpm_winnt:notice] [pid 4128:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 21:43:56.639920 2015] [mpm_winnt:notice] [pid 2092:tid 184] AH00364: Child: All worker threads have exited.
+[Wed Oct 28 22:01:30.831616 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Oct 28 22:01:30.847214 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 22:01:30.847214 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 22:01:30.847214 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 22:01:30.847214 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 22:01:30.847214 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4204
+[Wed Oct 28 22:01:31.049992 2015] [auth_digest:notice] [pid 4204:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 22:01:31.845505 2015] [mpm_winnt:notice] [pid 4204:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 22:01:32.859395 2015] [mpm_winnt:notice] [pid 4128:tid 184] AH00364: Child: All worker threads have exited.
+[Wed Oct 28 22:01:36.493810 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49670] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/welcome.html
+[Wed Oct 28 22:01:41.298117 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49670] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/welcome.html
+[Wed Oct 28 22:01:44.230616 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49670] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/welcome.html
+[Wed Oct 28 22:01:47.412690 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49670] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/welcome.html
+[Wed Oct 28 22:02:28.343891 2015] [authz_core:error] [pid 4204:tid 836] [client 172.16.231.1:50447] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Wed Oct 28 22:03:01.662247 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49671] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bo
+[Wed Oct 28 22:03:03.690052 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49671] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Wed Oct 28 22:03:06.014228 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49671] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Wed Oct 28 22:03:07.340101 2015] [authz_core:error] [pid 4204:tid 836] [client 127.0.0.1:49671] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Wed Oct 28 22:03:50.267372 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Wed Oct 28 22:03:50.282970 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 22:03:50.298569 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Wed Oct 28 22:03:50.298569 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Wed Oct 28 22:03:50.298569 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Wed Oct 28 22:03:50.298569 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4156
+[Wed Oct 28 22:03:50.501352 2015] [auth_digest:notice] [pid 4156:tid 184] AH01757: generating secret for digest authentication ...
+[Wed Oct 28 22:03:51.281287 2015] [mpm_winnt:notice] [pid 4156:tid 184] AH00354: Child: Starting 64 worker threads.
+[Wed Oct 28 22:03:52.295203 2015] [mpm_winnt:notice] [pid 4204:tid 184] AH00364: Child: All worker threads have exited.
+[Wed Oct 28 22:04:03.027108 2015] [authz_core:error] [pid 4156:tid 900] [client 127.0.0.1:49672] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Wed Oct 28 22:04:03.900636 2015] [authz_core:error] [pid 4156:tid 900] [client 127.0.0.1:49672] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Thu Oct 29 13:06:41.789683 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Thu Oct 29 13:06:41.820896 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Thu Oct 29 13:06:41.820896 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Thu Oct 29 13:06:41.820896 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Thu Oct 29 13:06:41.820896 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Thu Oct 29 13:06:41.820896 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4640
+[Thu Oct 29 13:06:42.023777 2015] [auth_digest:notice] [pid 4640:tid 184] AH01757: generating secret for digest authentication ...
+[Thu Oct 29 13:06:42.804092 2015] [mpm_winnt:notice] [pid 4640:tid 184] AH00354: Child: Starting 64 worker threads.
+[Thu Oct 29 13:06:43.818502 2015] [mpm_winnt:notice] [pid 4156:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:10:03.987604 2015] [authz_core:error] [pid 4640:tid 896] [client 172.16.231.132:49788] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:22.030148 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:12:22.045748 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:12:22.061349 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:12:22.061349 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:12:22.061349 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:12:22.061349 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 5096
+[Fri Oct 30 14:12:22.264160 2015] [auth_digest:notice] [pid 5096:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:12:23.044200 2015] [mpm_winnt:notice] [pid 5096:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:12:24.058252 2015] [mpm_winnt:notice] [pid 4640:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:12:29.019306 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:31.921055 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:32.685494 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:33.137917 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:33.418732 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:33.808752 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:34.027163 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:34.261175 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:34.432784 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:34.651195 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:34.885207 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:35.103618 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:36.772904 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:12:38.972616 2015] [authz_core:error] [pid 5096:tid 900] [client 172.16.231.132:49789] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:14:22.464325 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:14:22.479925 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:14:22.495525 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:14:22.495525 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:14:22.495525 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:14:22.495525 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4552
+[Fri Oct 30 14:14:22.698321 2015] [auth_digest:notice] [pid 4552:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:14:23.478306 2015] [mpm_winnt:notice] [pid 4552:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:14:24.492286 2015] [mpm_winnt:notice] [pid 5096:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:14:32.978523 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:34.663291 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:37.018845 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:37.892429 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:38.422818 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:38.875210 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:39.312001 2015] [authz_core:error] [pid 4552:tid 900] [client 172.16.231.132:49790] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:14:45.770277 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:14:45.785877 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:14:45.785877 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:14:45.785877 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:14:45.785877 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:14:45.785877 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 1164
+[Fri Oct 30 14:14:45.988673 2015] [auth_digest:notice] [pid 1164:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:14:46.784258 2015] [mpm_winnt:notice] [pid 1164:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:14:47.798238 2015] [mpm_winnt:notice] [pid 4552:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:15:01.120382 2015] [authz_core:error] [pid 1164:tid 900] [client 172.16.231.132:49791] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:15:02.945547 2015] [authz_core:error] [pid 1164:tid 900] [client 172.16.231.132:49791] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:15:08.171446 2015] [authz_core:error] [pid 1164:tid 900] [client 172.16.231.132:49792] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:15:10.792170 2015] [authz_core:error] [pid 1164:tid 900] [client 172.16.231.132:49792] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/
+[Fri Oct 30 14:16:19.429465 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:16:19.445065 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:16:19.445065 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:16:19.445065 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:16:19.445065 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:16:19.445065 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2680
+[Fri Oct 30 14:16:19.663455 2015] [auth_digest:notice] [pid 2680:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:16:20.443420 2015] [mpm_winnt:notice] [pid 2680:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:16:21.457374 2015] [mpm_winnt:notice] [pid 1164:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:16:22.798914 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:16:25.388398 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:16:26.183962 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:16:26.651941 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:16:28.742248 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:16:30.894951 2015] [autoindex:error] [pid 2680:tid 900] [client 172.16.231.132:49793] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:19:46.242539 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:19:46.258138 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:19:46.258138 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:19:46.258138 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:19:46.258138 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:19:46.258138 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 1884
+[Fri Oct 30 14:19:46.460926 2015] [auth_digest:notice] [pid 1884:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:19:47.256480 2015] [mpm_winnt:notice] [pid 1884:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:19:48.270422 2015] [mpm_winnt:notice] [pid 2680:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:19:52.825359 2015] [authz_core:error] [pid 1884:tid 820] [client 172.16.231.132:49801] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bop
+[Fri Oct 30 14:19:54.712850 2015] [authz_core:error] [pid 1884:tid 820] [client 172.16.231.132:49801] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bop
+[Fri Oct 30 14:19:59.751359 2015] [autoindex:error] [pid 1884:tid 820] [client 172.16.231.132:49802] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:02.184819 2015] [autoindex:error] [pid 1884:tid 820] [client 172.16.231.132:49802] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:22.182865 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:20:22.214063 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:20:22.214063 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:20:22.214063 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:20:22.214063 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:20:22.214063 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2348
+[Fri Oct 30 14:20:22.432451 2015] [auth_digest:notice] [pid 2348:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:20:23.196807 2015] [mpm_winnt:notice] [pid 2348:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:20:24.210748 2015] [mpm_winnt:notice] [pid 1884:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:20:24.678721 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:25.677064 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:26.004645 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:26.207433 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:26.363424 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:26.535014 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:26.659807 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49803] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:20:36.768024 2015] [autoindex:error] [pid 2348:tid 900] [client 172.16.231.132:49804] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:22:49.862275 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:22:49.877872 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:22:49.877872 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:22:49.877872 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:22:49.877872 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:22:49.877872 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2676
+[Fri Oct 30 14:22:50.096239 2015] [auth_digest:notice] [pid 2676:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:22:50.876119 2015] [mpm_winnt:notice] [pid 2676:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:22:51.889963 2015] [mpm_winnt:notice] [pid 2348:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:22:56.116912 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:22:57.286732 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:22:59.922727 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:04.664397 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:06.536109 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:06.957244 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:07.206806 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:07.440770 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:07.659136 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:07.861905 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:08.064674 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:08.251845 2015] [autoindex:error] [pid 2676:tid 900] [client 172.16.231.132:49834] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:44.720841 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:23:44.736439 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:23:44.736439 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:23:44.736439 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:23:44.736439 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:23:44.752038 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 2652
+[Fri Oct 30 14:23:44.954817 2015] [auth_digest:notice] [pid 2652:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:23:45.734737 2015] [mpm_winnt:notice] [pid 2652:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:23:46.748633 2015] [mpm_winnt:notice] [pid 2676:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:23:55.483737 2015] [autoindex:error] [pid 2652:tid 856] [client 172.16.231.132:49835] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:23:57.729907 2015] [autoindex:error] [pid 2652:tid 856] [client 172.16.231.132:49835] AH01276: Cannot serve directory C:/driveD/lab3/home/Bob/public/: No matching DirectoryIndex (welcome.htm) found, and server-generated directory index forbidden by Options directive
+[Fri Oct 30 14:24:20.254203 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:24:20.269802 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:24:20.269802 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:24:20.269802 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:24:20.269802 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:24:20.269802 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4660
+[Fri Oct 30 14:24:20.488184 2015] [auth_digest:notice] [pid 4660:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:24:21.268119 2015] [mpm_winnt:notice] [pid 4660:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:24:22.282034 2015] [mpm_winnt:notice] [pid 2652:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:24:22.937180 2015] [authz_core:error] [pid 4660:tid 904] [client 172.16.231.132:49837] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:26:49.005452 2015] [authz_core:error] [pid 4660:tid 904] [client 172.16.231.132:49843] AH01630: client denied by server configuration: C:/driveD/lab3/home/Bob/public/.htaccess
+[Fri Oct 30 14:32:48.348074 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:32:48.363673 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:32:48.379273 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:32:48.379273 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:32:48.379273 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:32:48.379273 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 1596
+[Fri Oct 30 14:32:48.582062 2015] [auth_digest:notice] [pid 1596:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:32:49.362022 2015] [mpm_winnt:notice] [pid 1596:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:32:50.375970 2015] [mpm_winnt:notice] [pid 4660:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 14:33:03.931675 2015] [authz_core:error] [pid 1596:tid 868] [client 172.16.231.132:49848] AH01630: client denied by server configuration: C:/driveD/lab3/home/Rudolf
+[Fri Oct 30 14:34:05.928157 2015] [authz_core:error] [pid 1596:tid 868] [client 172.16.231.132:49851] AH01630: client denied by server configuration: C:/driveD/lab3/home/Rudolf
+[Fri Oct 30 14:36:18.120445 2015] [authz_core:error] [pid 1596:tid 868] [client 172.16.231.132:49853] AH01630: client denied by server configuration: C:/driveD/lab3/home/Rudolf
+[Fri Oct 30 14:54:04.534882 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 14:54:04.550481 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:54:04.550481 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 14:54:04.550481 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 14:54:04.550481 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 14:54:04.550481 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4748
+[Fri Oct 30 14:54:04.768874 2015] [auth_digest:notice] [pid 4748:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 14:54:05.548849 2015] [mpm_winnt:notice] [pid 4748:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 14:54:06.562817 2015] [mpm_winnt:notice] [pid 1596:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:01:13.411481 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 15:01:13.427080 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:01:13.427080 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:01:13.427080 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:01:13.427080 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:01:13.427080 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 3836
+[Fri Oct 30 15:01:13.645469 2015] [auth_digest:notice] [pid 3836:tid 184] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:01:14.425429 2015] [mpm_winnt:notice] [pid 3836:tid 184] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:01:15.439377 2015] [mpm_winnt:notice] [pid 4748:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:08:18.820978 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 15:08:18.836577 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:08:18.852176 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:08:18.852176 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:08:18.852176 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:08:18.852176 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 300
+[Fri Oct 30 15:08:19.054966 2015] [auth_digest:notice] [pid 300:tid 188] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:08:19.834926 2015] [mpm_winnt:notice] [pid 300:tid 188] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:08:20.848874 2015] [mpm_winnt:notice] [pid 3836:tid 184] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:10:45.835069 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 15:10:45.850669 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:10:45.850669 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:10:45.850669 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:10:45.850669 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:10:45.850669 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 4568
+[Fri Oct 30 15:10:46.053469 2015] [auth_digest:notice] [pid 4568:tid 188] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:10:46.849069 2015] [mpm_winnt:notice] [pid 4568:tid 188] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:10:47.863069 2015] [mpm_winnt:notice] [pid 300:tid 188] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:27:02.044056 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 15:27:02.059654 2015] [auth_digest:notice] [pid 1428:tid 448] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:27:02.059654 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:27:02.059654 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:27:02.059654 2015] [core:notice] [pid 1428:tid 448] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:27:02.059654 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00418: Parent: Created child process 3740
+[Fri Oct 30 15:27:02.278025 2015] [auth_digest:notice] [pid 3740:tid 188] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:27:03.057920 2015] [mpm_winnt:notice] [pid 3740:tid 188] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:27:04.071783 2015] [mpm_winnt:notice] [pid 4568:tid 188] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:38:36.483500 2015] [mpm_winnt:notice] [pid 1428:tid 448] AH00424: Parent: Received restart signal -- Restarting the server.
+httpd.exe: Syntax error on line 313 of C:/Apache24/conf/httpd.conf: C:/Apache24/conf/httpd.conf:313: <> was not closed.
+[Fri Oct 30 15:38:38.494767 2015] [mpm_winnt:notice] [pid 3740:tid 188] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 15:40:13.528709 2015] [core:warn] [pid 3596:tid 292] AH00098: pid file C:/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Fri Oct 30 15:40:13.528709 2015] [auth_digest:notice] [pid 3596:tid 292] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:40:13.528709 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:40:13.528709 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:40:13.528709 2015] [core:notice] [pid 3596:tid 292] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:40:13.528709 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00418: Parent: Created child process 4368
+[Fri Oct 30 15:40:13.731499 2015] [auth_digest:notice] [pid 4368:tid 188] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:40:13.731499 2015] [mpm_winnt:notice] [pid 4368:tid 188] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:41:41.118416 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 15:41:41.149615 2015] [auth_digest:notice] [pid 3596:tid 292] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:41:41.149615 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 15:41:41.149615 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 15:41:41.149615 2015] [core:notice] [pid 3596:tid 292] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 15:41:41.149615 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00418: Parent: Created child process 4152
+[Fri Oct 30 15:41:41.352406 2015] [auth_digest:notice] [pid 4152:tid 196] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 15:41:42.132371 2015] [mpm_winnt:notice] [pid 4152:tid 196] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 15:41:43.146325 2015] [mpm_winnt:notice] [pid 4368:tid 188] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 16:00:05.887675 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 16:00:05.903275 2015] [auth_digest:notice] [pid 3596:tid 292] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 16:00:05.918874 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 16:00:05.918874 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 16:00:05.918874 2015] [core:notice] [pid 3596:tid 292] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 16:00:05.918874 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00418: Parent: Created child process 4884
+[Fri Oct 30 16:00:06.121665 2015] [auth_digest:notice] [pid 4884:tid 196] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 16:00:06.901630 2015] [mpm_winnt:notice] [pid 4884:tid 196] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 16:00:07.915584 2015] [mpm_winnt:notice] [pid 4152:tid 196] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 16:03:05.559643 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00424: Parent: Received restart signal -- Restarting the server.
+[Fri Oct 30 16:03:05.575243 2015] [auth_digest:notice] [pid 3596:tid 292] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 16:03:05.575243 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00455: Apache/2.4.17 (Win64) configured -- resuming normal operations
+[Fri Oct 30 16:03:05.575243 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00456: Apache Lounge VC14 Server built: Oct 11 2015 11:49:07
+[Fri Oct 30 16:03:05.575243 2015] [core:notice] [pid 3596:tid 292] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Fri Oct 30 16:03:05.575243 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00418: Parent: Created child process 4856
+[Fri Oct 30 16:03:05.793633 2015] [auth_digest:notice] [pid 4856:tid 196] AH01757: generating secret for digest authentication ...
+[Fri Oct 30 16:03:06.573598 2015] [mpm_winnt:notice] [pid 4856:tid 196] AH00354: Child: Starting 64 worker threads.
+[Fri Oct 30 16:03:07.587552 2015] [mpm_winnt:notice] [pid 4884:tid 196] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 16:15:01.000571 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Fri Oct 30 16:15:03.028480 2015] [mpm_winnt:notice] [pid 4856:tid 196] AH00364: Child: All worker threads have exited.
+[Fri Oct 30 16:15:03.044079 2015] [mpm_winnt:notice] [pid 3596:tid 292] AH00430: Parent: Child process 4856 exited successfully.

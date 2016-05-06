@@ -1,0 +1,24 @@
+<html>
+<head>
+<!-- Information Systems 2 (v2014/15) -->
+</head>
+<body>
+<center>
+
+<h1>Welcome to Virtual Site No. 03 (german)</h1>  <!-- for virtual sites -->
+
+<!-- TODO: Specify here the correct URL for this page -->
+<h2><i>URL: admin.sinf03.ch:80/index.html.de</i></h2>
+
+
+<!-- ----------------------------------------------------
+  -- dont't change the remaining lines below here
+  ------------------------------------------------------->
+<hr>
+<img src="/img/road_work.jpg">
+<hr>
+Information System Lab (2014/15)
+</center>
+
+</body>
+</html>
