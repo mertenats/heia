@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    tools:context="ch.heia.mobiledev.treasurehunt.NavigationHomeActivity" >
+    
+    <ImageView
+        android:id="@+id/im_home"
+        android:src="@drawable/detective"
+        android:layout_width="250dp"
+        android:layout_height="330dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/bt_newgame"
+        android:onClick="onNewGame"
+        android:text="@string/newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_below="@id/im_home"
+        android:layout_alignEnd="@+id/im_home"
+        android:layout_alignStart="@+id/im_home"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bt_loadgame"
+        android:onClick="onLoadGame"
+        android:text="@string/loadgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_below="@id/bt_newgame"
+        android:layout_alignStart="@+id/bt_newgame"
+        android:layout_alignEnd="@+id/bt_newgame"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/bt_about"
+        android:onClick="onReadAbout"
+        android:text="@string/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_below="@id/bt_loadgame"
+        android:layout_alignStart="@+id/bt_loadgame"
+        android:layout_alignEnd="@+id/bt_loadgame"
+        android:layout_marginTop="10dp" />
+
+</RelativeLayout>
+-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/screenbackground"
+    tools:context="ch.heia.mobiledev.treasurehunt.NavigationHomeActivity"
+    android:orientation="vertical"
+    tools:ignore="Overdraw">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="top"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="6"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="30dp" >
+
+        <ImageView
+            android:src="@drawable/detective"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:layout_gravity="top"
+            android:contentDescription="@string/logoDescription"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="bottom"
+        android:layout_height="0dp"
+        android:layout_width="match_parent"
+        android:layout_weight="4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="40dp" >
+
+        <Button
+            android:onClick="onNewGame"
+            android:text="@string/newgame"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_gravity="bottom" />
+
+        <Button
+            android:onClick="onLoadGame"
+            android:id="@+id/load_game_bt"
+            android:text="@string/loadgame"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:onClick="onReadAbout"
+            android:text="@string/about"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom"/>
+    </LinearLayout>
+</LinearLayout>
