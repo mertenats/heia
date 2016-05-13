@@ -53,12 +53,12 @@ class CoapWrapper {
 		// response
 		if (response.isSuccess()) {
 			System.out.println("CoapProxy.doGet() : " + coapURI);
-			httpResponse.setStatus(HttpServletResponse.SC_OK);
+			httpResponse.setStatus(/*convertCoapResponseCode(response)*/HttpServletResponse.SC_OK);
 			httpResponse.setContentType("application/json");
 			httpResponse.getWriter().println(response.getResponseText());
 		} else {
 			System.out.println("CoapProxy.doGet() : ERROR");
-			httpResponse.setStatus(HttpServletResponse.SC_NOT_FOUND);
+			httpResponse.setStatus(convertCoapResponseCode(response));
 		}
 	}
 
@@ -122,10 +122,10 @@ class CoapWrapper {
 		// response
 		if (response.isSuccess()) {
 			System.out.println("CoapProxy.doPut() : " + coapURI);
-			httpResponse.setStatus(HttpServletResponse.SC_OK);
+			httpResponse.setStatus(/*convertCoapResponseCode(response)*/HttpServletResponse.SC_OK);
 		} else {
 			System.out.println("CoapProxy.doPut() : ERROR --> COAP request " + coapURI);
-			httpResponse.setStatus(HttpServletResponse.SC_NOT_FOUND);
+			httpResponse.setStatus(convertCoapResponseCode(response));
 		}
 	}
 
@@ -201,12 +201,14 @@ class CoapWrapper {
 			public void onTimeout(AsyncEvent event) throws IOException {
 				System.out.println("CoapProxy.addToWaitingList() : onTimeout() : event: " + event.toString());
 				asyncContext.complete();
+				// relation.proactiveCancel();
 			}
 
 			@Override
 			public void onError(AsyncEvent event) throws IOException {
 				System.out.println("CoapProxy.addToWaitingList() : onError() : event: " + event.toString());
 				asyncContext.complete();
+				// relation.proactiveCancel();
 			}
 		});
 
@@ -234,86 +236,40 @@ class CoapWrapper {
 		});
 	}
 
-	/**
-	 * method for converting the COAP response into a HTTP response based on
-	 * draft :
-	 * https://tools.ietf.org/html/draft-ietf-core-http-mapping-04#section-6.2
-	 *
-	 * @param coapResponse
-	 *            - COAP response
-	 * @param httpResponse
-	 *            - HTTP response
-	 */
-	private static void convertResponse(CoapResponse coapResponse, HttpServletResponse httpResponse)
-			throws ServletException {
-
-		PrintWriter out = null;
-		try {
-			out = httpResponse.getWriter();
-		} catch (IOException e) {
-			e.printStackTrace();
+	private static int convertCoapResponseCode(CoapResponse coapResponse) {
+		switch (coapResponse.getCode()) {
+		case VALID:
+			return HttpServletResponse.SC_OK;
+		case CREATED:
+			return HttpServletResponse.SC_CREATED;
+		case DELETED:
+			return HttpServletResponse.SC_NOT_MODIFIED;
+		case BAD_REQUEST:
+			return HttpServletResponse.SC_BAD_REQUEST;
+		case NOT_FOUND:
+			return HttpServletResponse.SC_NOT_FOUND;
+		case FORBIDDEN:
+			return HttpServletResponse.SC_FORBIDDEN;
+		case NOT_ACCEPTABLE:
+			return HttpServletResponse.SC_NOT_ACCEPTABLE;
+		case PRECONDITION_FAILED:
+			return HttpServletResponse.SC_PRECONDITION_FAILED;
+		case REQUEST_ENTITY_TOO_LARGE:
+			return HttpServletResponse.SC_REQUEST_ENTITY_TOO_LARGE;
+		case UNSUPPORTED_CONTENT_FORMAT:
+			return HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE;
+		case INTERNAL_SERVER_ERROR:
+			return HttpServletResponse.SC_INTERNAL_SERVER_ERROR;
+		case NOT_IMPLEMENTED:
+			return HttpServletResponse.SC_NOT_IMPLEMENTED;
+		case PROXY_NOT_SUPPORTED:
+		case BAD_GATEWAY:
+			return HttpServletResponse.SC_BAD_GATEWAY;
+		case SERVICE_UNAVAILABLE:
+			return HttpServletResponse.SC_SERVICE_UNAVAILABLE;
+		default:
+			break;
 		}
-
-		if (coapResponse != null) {
-			switch (coapResponse.getCode()) {
-			case _UNKNOWN_SUCCESS_CODE:
-			case REQUEST_ENTITY_INCOMPLETE:
-			case CONTINUE:
-				throw new ServletException("Not implemented");
-			case CONTENT:
-			case CHANGED:
-			case VALID:
-				httpResponse.setStatus(HttpServletResponse.SC_OK);
-				out.println(coapResponse.getResponseText());
-				break;
-			case CREATED:
-				httpResponse.setStatus(HttpServletResponse.SC_CREATED);
-				break;
-			case DELETED:
-				httpResponse.setStatus(HttpServletResponse.SC_NOT_MODIFIED);
-				break;
-			case BAD_REQUEST:
-				httpResponse.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-				break;
-			case UNAUTHORIZED:
-			case METHOD_NOT_ALLOWED:
-			case BAD_OPTION:
-			case NOT_FOUND:
-				httpResponse.setStatus(HttpServletResponse.SC_BAD_REQUEST);
-				break;
-			case FORBIDDEN:
-				httpResponse.setStatus(HttpServletResponse.SC_FORBIDDEN);
-				break;
-			case NOT_ACCEPTABLE:
-				httpResponse.setStatus(HttpServletResponse.SC_NOT_ACCEPTABLE);
-				break;
-			case PRECONDITION_FAILED:
-				httpResponse.setStatus(HttpServletResponse.SC_PRECONDITION_FAILED);
-				break;
-			case REQUEST_ENTITY_TOO_LARGE:
-				httpResponse.setStatus(HttpServletResponse.SC_REQUEST_ENTITY_TOO_LARGE);
-				break;
-			case UNSUPPORTED_CONTENT_FORMAT:
-				httpResponse.setStatus(HttpServletResponse.SC_UNSUPPORTED_MEDIA_TYPE);
-				break;
-			case INTERNAL_SERVER_ERROR:
-				httpResponse.setStatus(HttpServletResponse.SC_INTERNAL_SERVER_ERROR);
-				break;
-			case NOT_IMPLEMENTED:
-				httpResponse.setStatus(HttpServletResponse.SC_NOT_IMPLEMENTED);
-				break;
-			case PROXY_NOT_SUPPORTED:
-			case BAD_GATEWAY:
-				httpResponse.setStatus(HttpServletResponse.SC_BAD_GATEWAY);
-				break;
-			case SERVICE_UNAVAILABLE:
-				httpResponse.setStatus(HttpServletResponse.SC_SERVICE_UNAVAILABLE);
-				break;
-			default:
-				break;
-			}
-		} else {
-			out.print("CoapResponse equals null");
-		}
+		return HttpServletResponse.SC_BAD_REQUEST;
 	}
 }

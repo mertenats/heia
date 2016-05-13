@@ -1,5 +1,5 @@
 # Développement d'applications internet
-## J. Mettraux - S. Mertenat
+## Samuel M.
 
 
 TP       | Emplacement                   | Description

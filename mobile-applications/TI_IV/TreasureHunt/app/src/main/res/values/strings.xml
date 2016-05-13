@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">TreasureHunt</string>
+
+    <!-- Navigation home activity -->
+    <string name="newgame">New game</string>
+    <string name="loadgame">Load game</string>
+    <string name="about">About</string>
+    <string name="logoDescription">Logo of the application</string>
+
+    <!-- Beacons map activity -->
+    <string name="title_activity_beacons_map">BeaconsMap</string>
+    <string name="showHints">Display hints</string>
+    <string name="showBeacons">Display found beacons</string>
+    <string name="indicator">Proximity Indicator</string>
+    <string name="location">Locate me</string>
+    <string name="step">Steps : 0</string>
+
+    <!-- About fragment -->
+    <string name="dismiss">Dismiss</string>
+</resources>

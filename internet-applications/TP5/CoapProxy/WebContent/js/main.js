@@ -15,6 +15,7 @@ var STATE_SENSOR_ID = 'state';
 // var timerMap = {};
 // Map(): https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Objets_globaux/Map
 var timerMap = new Map();
+var eventSourceMap = new Map();
 
 // timeout value
 var TIMER_INTERVAL = 5000; // [ms]
@@ -115,6 +116,18 @@ function dataObserve(deviceLocation, observationStatus) {
     pressure.onerror = function(event) {
       console.log("Error pressure from " + deviceLocation + " " + event.data);
     };
+
+    eventSourceMap.set(deviceLocation + '_temperature', temperature);
+    eventSourceMap.set(deviceLocation + '_humidity', humidity);
+    eventSourceMap.set(deviceLocation + '_pressure', pressure);
+  } else {
+    // remove the event-sourec
+    var key = deviceLocation + 'pressure';
+    eventSourceMap.get(key).close();
+    key = deviceLocation + '_temperature';
+    eventSourceMap.get(key).close();
+    key = deviceLocation + '_humidity';
+    eventSourceMap.get(key).close();
   }
 }
 
@@ -124,10 +137,21 @@ function stateObserve(deviceLocation, observationStatus) {
     var state = new EventSource("http://localhost:8080/TP5_CoapProxy/rest/weatherstation/" + deviceLocation + "/state");
     state.onmessage = function(event) {
       console.log("State from " + deviceLocation + " " + event.data);
+      var id = '#' + deviceLocation + '_' + STATE_SENSOR_ID;
+      if (event.data == '1') {
+        $(id).html('<span class="label label-success">ON</span>');
+      } else if (event.data = '0') {
+        $(id).html('<span class="label label-danger">OFF</span>');
+      }
     };
     state.onerror = function(event) {
       console.log("State from " + deviceLocation + " " + event.data);
     };
+
+    eventSourceMap.set(deviceLocation + '_state', state);
+  } else {
+    var key = deviceLocation + '_state';
+    eventSourceMap.get(key).close();
   }
 }
 
@@ -194,8 +218,8 @@ function getWeatherStationData() {
 
         // update the display for this device
         updateDisplay(deviceLocation, l_device);
-        stateObserve(deviceLocation, TRUE)
-        dataObserve(deviceLocation, TRUE)
+        stateObserve(deviceLocation, TRUE);
+        dataObserve(deviceLocation, TRUE);
       }
     },
     // Code to run if the request fails; the raw request and status codes are passed to the function
@@ -232,10 +256,11 @@ function updateDisplay(p_deviceLocation, p_device) {
   output += ' </div>';
 
   output += ' <div class="col-xs-6 col-sm-6 text-right">';
+  var state_id = p_deviceLocation + '_state';
   if (p_device.mState) {
-    output += '   <h2><span class="label label-success">ON</span></h2>';
+    output += '   <h2 id="' + state_id + '"><span class="label label-success">ON</span></h2>';
   } else {
-    output += '   <h2><span class="label label-danger">OFF</span></h2>';
+    output += '   <h2 id="' + state_id + '"><span class="label label-danger">OFF</span></h2>';
   }
   output += ' </div>';
   output += '</div>';
@@ -355,10 +380,11 @@ function updateDetailledPreviewWeatherStation(p_deviceLocation) {
       output += ' </div>';
       output += ' <div id="station_state" class="col-xs-6 col-sm-6 text-right">';
 
+      var state_id = p_deviceLocation + '_state';
       if (data.mState) {
-        output += '   <h2><span class="label label-success">ON</span></h2>';
+        output += '   <h2 id="' + state_id + '"><span class="label label-success">ON</span></h2>';
       } else {
-        output += '   <h2><span class="label label-danger">OFF</span></h2>';
+        output += '   <h2 id="' + state_id + '"><span class="label label-danger">OFF</span></h2>';
       }
 
       output += ' </div>';
@@ -382,7 +408,19 @@ function updateDetailledPreviewWeatherStation(p_deviceLocation) {
         }
 
         output += '     <div class="circle-inner">';
-        output += '       <div class="circle-text">';
+
+        if (sensor.mSensorId == TEMP_SENSOR_ID) {
+          var id = p_deviceLocation + '_temperature';
+          output += '       <div id="' + id + '" class="circle-text">';
+        } else if (sensor.mSensorId == HUM_SENSOR_ID) {
+          var id = p_deviceLocation + '_humidity';
+          output += '       <div id="' + id + '" class="circle-text">';
+        } else if (sensor.mSensorId == PRES_SENSOR_ID) {
+          var id = p_deviceLocation + '_pressure';
+          output += '       <div id="' + id + '" class="circle-text">';
+        } else {
+          output += '       <div class="circle-text">';
+        }
         output += '         ' + Math.round(sensor.mSensorValue) + '' + sensor.mSensorUnit ;
         output += '       </div>';
         output += '     </div>';
