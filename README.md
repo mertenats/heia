@@ -1,5 +1,5 @@
 # School of Engineering and Architecture of Fribourg
-### Practical Work - Samuel M.
+### Samuel M.
 
 ## Courses
 - Algorithms and Data Structures (Java)
@@ -9,5 +9,5 @@
 - Mobile Applications (Android, BLE, Java)
 - Information Systems II (Servlet, JSP, ...)
 
-## Semester projets
+## Semester projects
 - HEIA-Weather (nordic nRF51, BLE, IPv6, MQTT, current consumption)
