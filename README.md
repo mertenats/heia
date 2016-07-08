@@ -1,5 +1,4 @@
 # School of Engineering and Architecture of Fribourg
-### Samuel M.
 
 ## Courses
 - Algorithms and Data Structures (Java)
