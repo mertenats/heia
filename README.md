@@ -11,3 +11,4 @@
 
 ## Semester projects
 - HEIA-Weather (nordic nRF51, BLE, IPv6, MQTT, current consumption)
+- RadioTrack (Quuppa's positioning system, Matlab, Web technologies)

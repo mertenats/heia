@@ -1,0 +1,39 @@
+{
+  "zones" :[
+    {
+      "zoneId" : "Zone001",
+      "htmlId" : "southDoor",
+      "name" : "Porte Sud",
+      "description" : "Cette porte mène au laboratoire de télécommunications C1022."
+    },
+    {
+      "zoneID" : "Zone002",
+      "htmlId" : "desk8",
+      "name" : "Bureau de M. Mertenat",
+      "description" : "Sur le bureau, il est possible d'observer le serveur et le switch PoE nécessaires au fonctionnement du système de localisation."
+    },
+    {
+      "zoneID" : "Zone003",
+      "htmlId" : "westDoor",
+      "name" : "Porte Ouest",
+      "description" : "Cette porte mène dans le couloir C10."
+    },
+    {
+      "zoneID" : "Zone004",
+      "htmlId" : "desk3",
+      "name" : "Bureau de M. Chassot",
+      "description" : "M. Chassot développe une application destinée à la reconnaissance de notes de musique."
+    },
+    {
+      "zoneID" : "Zone005",
+      "htmlId" : "docsisCupboard",
+      "name" : "Armoire réseau",
+      "description" : "Cette armoire contient tout le système nécessaire à un réseau Docsis."
+    },
+    {
+      "zoneID" : "Zone006",
+      "htmlId" : "coffeeMachine",
+      "name" : "Machines à café",
+      "description" : "Lieu très courru de tout l'étage en raison de la présence de deux machines à café."
+    }
+]}
